@@ -24,6 +24,7 @@ const MainMint = ({ accounts, setAccounts }) => {
 					value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
 				});
 				console.log("response from MainMint", response);
+                alert("MINT successful");
 			} catch (error) {
 				console.log("error occured in MainMint", error);
 			}
